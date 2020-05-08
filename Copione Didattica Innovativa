@@ -1,4 +1,5 @@
-Start
+
+Start Presentazione
 
 ZACK
 
@@ -22,7 +23,9 @@ sempre su quel ipotesi che il sole non risente mai dell'attrazione gravitazional
 L'unico modo di approssimare al meglio il moto di tre corpi e quindi utilizzare un metodo numerico
 
 bene, Ora concentriamoci invece su un altro esempio classico ovvero il pendolo sferico
-Allora in questo caso Cosa vogliamo fare vogliamo studiare il moto di un . con coordinate X1 X2 X3 Che nel nostro caso è il centro di massa di un oggetto sferico di peso m soggetto la forza di gravità è vincolato a muoversi su una superficie di forma sferica di equazione X 1 quadro X2 quadro X3 quadro meno 1 = 0 
+Allora in questo caso Cosa vogliamo fare vogliamo studiare il moto di un . con coordinate X1 X2 X3 
+Che nel nostro caso è il centro di massa di un oggetto sferico di peso m soggetto la forza di gravità è 
+vincolato a muoversi su una superficie di forma sferica di equazione X 1 quadro X2 quadro X3 quadro meno 1 = 0 
 Quindi il seguente sistema di equazioni differenziali ordinarie scritte in forma compatta  descrive le accelerazioni che agiscono su questo. 
 Abbiamo indicato con XN punto e i due punti la derivata prima e seconda DX rispetto al tempo T e con h la matrice hessiana di fi
 
