@@ -36,7 +36,11 @@ componente 456 sono le derivate prime delle coordinate spaziali
 
 SAMUDONZO
 
-ok jwdncianeclnelncel
+I metodi di Runge-Kutta sono metodi a un passo che richiedono differenti valutazioni della funzione f(t,y) in ciascun intervallo di [t_n, t_n+1].
+In particolare è possibile esprimere u_n+1 secondo questa formula dove i coeff. bi e il termine Ki  sono le approssimazioni delle derivate della funzione incognita in punti intermedi dell'intervallo di integrazione.
+
+
+I coefficienti a_ij, bi, ci definiscono 
 
 
 
