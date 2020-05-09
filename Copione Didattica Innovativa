@@ -62,3 +62,34 @@ ROSE
 
 
 SAMU
+Da una parte, si vuole che il passo sia sufficientemente piccolo per garantire un’adeguata precisione; dall’altra, si vuole che sia 
+sufficientemente largo da evitare un lavoro computazionale troppo oneroso.
+SLIDE 1
+La soddisfazione di queste 2 condizioni si sposa perfettamente con la richiesta di rendere il passo adattivo.
+Quindi, come implementare un codice\algoritmo che renda il passo adattivo, diminuendo il costo computazionale, ma che comunque 
+garantisca una tolleranza dell’errore locale scelta a priori.
+Si parta ovviamente dalla scelta di un passo iniziale h, il programma computa le 2 approssimazioni numeriche della soluzione u1 e 
+u1 cappello, calcolati dai 2 metodi RK embedded. La differenza tra le approssimazioni dà una buona stima dell’errore locale. 
+E ovviamente questa stima, ossia il modulo della differenza delle 2 soluzioni della coppia embedded, deve essere minore uguale della 
+tolleranza prescelta. Come si può vedere, la tolleranza può essere formata da un termine di errore assoluto rappresentato dal fattore 
+Atol e uno relativo Rtol che invece individua l’errore relativo tra le 2 computazioni tra il passo precedente e quello attuale. 
+SLIDE 2	
+Prendiamo però come errore locale locale effettivo la norma 2 del rapporto tra la differenza tra le 2 soluzioni numeriche all’iesimo 
+passo e la tolleranza imposta. Per rispettare la condizione della slide precedente vogliamo che l’errore sia paragonabile a 1. 
+Inoltre l’errore locale si può vedere come una costante C moltiplicata per una potenza q+1 del passo, dove q è il minor ordine tra 
+i 2 della coppia embedded, e inoltre noi vogliamo che questo errore sia uguale a 1 per trovare il passo ottimale. 
+E vogliamo che C moltiplicato per una potenza q+1 passo ottimale sia comparabile a 1. Si arriva alla formula del passo ottimale che 
+è uguale al passo iniziale moltiplicato per il reciproco dell’errore elevato a 1/(q+1).
+Se l’errore se minore uguale a 1, la tolleranza è rispettata e la soluzione dell’iesimo passo è accettata. 
+Si procede con il calcolo del nuovo passo hnew e si calcolo la soluzione del nuovo step. Se la condizione non è verificata, 
+la soluzione non viene accettata e si ripete il calcolo con il nuovo passo hnew.
+Per dare robustezza all’algoritmo, vengono introdotti fattori di sicurezza che permettono una maggiore possibilità che la condizione 
+della tolleranza sia soddisfatta, e quindi non si continui a ripetere uno step aumentando il costo computazionale,  e inoltre non si 
+vuole che il passo cambi bruscamente per ovvi motivi di precisione.
+
+
+
+
+
+
+
