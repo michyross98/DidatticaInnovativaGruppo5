@@ -29,10 +29,11 @@ PARTE 1: INTRODUZIONE 			---> ZACK		6 minuti
 PARTE 2: METODI RK SOTTO AL COFANO 	----> SAMUDONZO		6 minuti
 
  - definizione dei metodi (perchè sono interessanti) + Formula generale
- - metodo esplicito o implicito
- - coeff. ---> tablau di Butcher ---
- - estrapolazione a partire dalla tavola ->metodi
-					 ->delle proprietà.
+ -  importanza coeff. ---> tablau di Butcher
+ - esempio: metodo del quarto ordine-> illustrazione dei coeff. K
+				    -> tableau di Butcher
+ - estrapolazione a partire dalla tavola -> metodi impliciti e espliciti
+					 -> proprietà (quante?).
  - 
 
 
