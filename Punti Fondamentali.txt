@@ -33,7 +33,6 @@ PARTE 1: INTRODUZIONE 			---> ZACK		6 minuti
 	* ODE23 
 	* ODE45
  - Video ODE1
- - Video ODE2
  - Lascio la parola a Samu
  
 
